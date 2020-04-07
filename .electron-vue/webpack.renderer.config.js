@@ -21,7 +21,7 @@ const { VueLoaderPlugin } = require('vue-loader')
  */
 //let whiteListedModules = ['vue']
 //可以使用elementUI 白名单
-let whiteListedModules = ['vue', 'element-ui']
+let whiteListedModules = ['vue', 'element-ui','fs-extra','fs']
 let rendererConfig = {
   devtool: '#cheap-module-eval-source-map',
   entry: {

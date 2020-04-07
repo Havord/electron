@@ -24,7 +24,7 @@
       <el-header height="10px">
         <el-breadcrumb separator="/">
           <el-breadcrumb-item :to="{ path: '/'}">首页</el-breadcrumb-item>
-          <el-breadcrumb-item>交路管理</el-breadcrumb-item>
+          <el-breadcrumb-item>上线计划管理</el-breadcrumb-item>
         </el-breadcrumb>
       </el-header>
       <el-main>
@@ -126,7 +126,7 @@
 </template>
 <script>
 export default {
-  name: "Traffic-Page",
+  name: "GroupPage ",
   data() {
     return {
       tableData: {
@@ -223,7 +223,7 @@ export default {
     }
   },
   created() {
-    console.log('trafficPage');
+    console.log('GroupPage');
     this.tableData.data = this.$db
       .read()
       .get("traffic")

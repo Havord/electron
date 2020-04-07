@@ -24,7 +24,7 @@
       <el-header height="10px">
         <el-breadcrumb separator="/">
           <el-breadcrumb-item :to="{ path: '/'}">首页</el-breadcrumb-item>
-          <el-breadcrumb-item>交路管理</el-breadcrumb-item>
+          <el-breadcrumb-item>车组管理</el-breadcrumb-item>
         </el-breadcrumb>
       </el-header>
       <el-main>
@@ -126,7 +126,7 @@
 </template>
 <script>
 export default {
-  name: "Traffic-Page",
+  name: "TrainPage",
   data() {
     return {
       tableData: {
@@ -223,7 +223,7 @@ export default {
     }
   },
   created() {
-    console.log('trafficPage');
+    console.log('TrainPage');
     this.tableData.data = this.$db
       .read()
       .get("traffic")
@@ -239,6 +239,13 @@ export default {
      }
 };
 
+//id生成工具 这个不用看 示例而已 模拟后台返回的id
+var generateId = {
+  _count: 1,
+  get() {
+    return +new Date() + "_" + this._count++;
+  }
+};
 </script>
 <style scoped>
 .el-breadcrumb {

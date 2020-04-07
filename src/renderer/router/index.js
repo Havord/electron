@@ -11,13 +11,18 @@ export default new Router({
     },
     {
       path: '/TrafficPage',
-      name: 'Traffic-Page',
+      name: 'TrafficPage',
       component: require('@/components/TrafficPage').default
     },
     {
-      path: '/LandingPage',
-      name: 'LandingPage-Page',
-      component: require('@/components/LandingPage').default
+      path: '/TrainPage',
+      name: 'TrainPage',
+      component: require('@/components/TrainPage').default
     },
+    {
+      path: '/GroupPage',
+      name: 'GroupPage',
+      component: require('@/components/GroupPage').default
+    }
   ]
 })

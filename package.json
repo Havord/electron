@@ -53,7 +53,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "element-ui": "^2.13.0",
-    "fs-extra": "^9.0.0",
+    "fs-extra": "8.1.0",
+    "is-electron": "^2.2.0",
     "lodash-id": "^0.14.0",
     "lowdb": "^1.0.0",
     "vue": "^2.5.16",

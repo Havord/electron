@@ -15,7 +15,7 @@
         <div class="grid-content bg-purple-light">
           <router-link
             style=" margin-top: 25%;margin-left:10%"
-            to="/LandingPage"
+            to="/TrainPage"
             tag="el-button"
           >车组管理</router-link>
         </div>
@@ -25,7 +25,7 @@
         <div class="grid-content bg-purple">
           <router-link
             style=" margin-top: 25%;margin-left:10%"
-            to="/TrafficPage"
+            to="/GroupPage"
             tag="el-button"
           >上线计划管理</router-link>
         </div>
